@@ -9,7 +9,7 @@ module.exports = {
     filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "../dist"),
   },
-  devtool: "source-map",
+  devtool: "nosources-source-map",
   plugins: [
     new CopyWebpackPlugin({
       patterns: [{ from: path.resolve(__dirname, "../static") }],
